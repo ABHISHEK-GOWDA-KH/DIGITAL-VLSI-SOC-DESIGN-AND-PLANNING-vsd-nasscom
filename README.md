@@ -11,29 +11,12 @@ desired functionality and meets fabrication requirements
 <img width="945" height="495" alt="image" src="https://github.com/user-attachments/assets/96c0d8f8-96de-4ca3-a562-7607f9084cbd" />
 #  Day 1
 
+RTL to GDSII is the complete digital ASIC design flow that converts a Verilog/VHDL Register Transfer Level (RTL) description into a final GDSII layout ready for fabrication. The process begins with RTL design and functional verification. Then synthesis converts RTL into a gate-level netlist using standard cell libraries. Floorplanning defines the chip area, power grid, placement constraints, and major block locations. Power planning adds power straps and rings. Placement arranges standard cells and optimizes timing. Clock Tree Synthesis (CTS) builds and balances the clock network to reduce skew. Routing connects all signals using metal layers while obeying design rules. After routing, physical verification checks for DRC (design rule check) and LVS (layout vs. schematic) correctness. Timing signoff ensures all paths meet setup/hold requirements. Finally, the design is exported as a GDSII file, which is the mask-level layout delivered to the foundry for chip fabrication.
 
 
-## 🔹 What is RTL → GDS-II?
 
-- **RTL (Verilog)** describes digital logic behavior  
-- **GDS-II** is the final layout used for chip fabrication  
-- Goal: Convert RTL → physical layout ready for manufacturing
 
----
 
-## 🔹 ASIC Flow Stages (OpenLane)
-
-1. **Synthesis** – RTL → gate-level netlist (Yosys + ABC)  
-2. **Floorplanning** – Die size, core size, power grid  
-3. **Placement** – Global + detailed cell placement  
-4. **CTS (Clock Tree Synthesis)** – Build clock network  
-5. **Routing** – Global + detailed routing (TritonRoute)  
-6. **Signoff** – DRC, LVS, STA  
-7. **GDS-II Generation** – Final chip layout
-
----
-
-## 🔹 OpenLane Pipeline Diagram
 
 
 
