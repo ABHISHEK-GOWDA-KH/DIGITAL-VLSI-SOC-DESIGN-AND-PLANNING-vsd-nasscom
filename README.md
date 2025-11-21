@@ -8,3 +8,5 @@ involves stages like RTL synthesis, floor planning, placement, routing, and
 ultimately generating the GDSII file format, which contains the layout data.
 This meticulous process ensures the final IC layout accurately reflects the
 desired functionality and meets fabrication requirements
+<img width="945" height="495" alt="image" src="https://github.com/user-attachments/assets/96c0d8f8-96de-4ca3-a562-7607f9084cbd" />
+
